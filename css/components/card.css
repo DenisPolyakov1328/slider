@@ -1,0 +1,35 @@
+.slider__card {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.slider__image {
+    width: 100%;
+    aspect-ratio: 421 / 165;
+    object-fit: cover;
+}
+
+.slider__text-group {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.slider__card-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.slider__text {
+    font-weight: 400;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

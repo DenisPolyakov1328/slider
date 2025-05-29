@@ -1,0 +1,32 @@
+.slider__indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -32px;
+    gap: 8px;
+    padding: 0 16px;
+    z-index: 1;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .slider__indicators {
+        margin-left: -16px;
+    }
+}
+
+.slider__indicator {
+    background-color: #DFE5D3;
+    height: 6px;
+    border-radius: 10px;
+    flex-shrink: 1;
+    width: clamp(16px, 5vw, 53.3px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.slider__indicator--active {
+    background-color: #CCD1C3;
+}

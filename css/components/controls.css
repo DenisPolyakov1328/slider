@@ -1,0 +1,53 @@
+.slider__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -32px;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .slider__controls {
+        margin-left: -16px;
+    }
+}
+
+.slider__title {
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 300;
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 75px;
+}
+
+.slider__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #CBD1BF;
+    color: #fff;
+    opacity: 0.6;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+}
+
+.slider__arrow--left {
+    margin-right: 24px;
+}
+
+.slider__arrow--right {
+    margin-left: 24px;
+}
+
+.slider__arrow:hover {
+    background-color: #B7BDAB;
+}
+
+.slider__arrow-icon {
+    fill: currentColor;
+    opacity: 70%;
+    transition: transform 0.2s;
+}
