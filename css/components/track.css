@@ -34,8 +34,15 @@
         padding: 4px 4px;
     }
 
+    /* .slider__item {
+    max-width: 100%;
+    width: clamp(300px, 85vw, 408px);
+} */
+}
+
+@media (max-width: 479px) {
     .slider__item {
-        max-width: 100%;
-        width: clamp(300px, 85vw, 408px);
+        width: 77vw;
+        max-width: 408px;
     }
 }
