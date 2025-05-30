@@ -23,12 +23,27 @@
     border-radius: 30px;
 }
 
-.slider__item:last-child {
+/* .slider__item:last-child {
     margin-right: 36px;
-}
+} */
 
 @media (max-width: 768px) {
-    .slider__item:last-child {
-        margin-right: 17.5px;
+    .slider__item {
+        max-width: 408px;
+    }
+
+    /* .slider__item:last-child {
+    margin-right: 0;
+} */
+}
+
+@media (max-width: 480px) {
+    .slider__viewport {
+        padding: 4px 4px;
+    }
+
+    .slider__item {
+        max-width: 100%;
+        width: clamp(300px, 85vw, 408px);
     }
 }
