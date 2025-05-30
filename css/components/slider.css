@@ -25,6 +25,12 @@
     }
 }
 
+@media (max-width: 479px) {
+    .slider {
+        height: 525px;
+    }
+}
+
 .slider::after {
     content: "";
     position: absolute;
