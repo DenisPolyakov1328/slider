@@ -37,9 +37,13 @@ function calculateDimensions() {
 }
 
 function goToSlide(index) {
+  const extraPadding = 20
   currentIndex = Math.max(0, Math.min(index, maxIndex))
 
-  const offset = Math.min(currentIndex * slideWidth, maxOffset + gap + 20)
+  const offset = Math.min(
+    currentIndex * slideWidth,
+    maxOffset + gap + extraPadding
+  )
   track.style.transform = `translateX(-${offset}px)`
 
   updateIndicators()
